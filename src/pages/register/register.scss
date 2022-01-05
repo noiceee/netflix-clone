@@ -1,0 +1,93 @@
+.register{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background: radial-gradient(rgba(10, 10, 10, 0.287), rgba(0, 0, 0, 0.856)), url("https://assets.nflxext.com/ffe/siteui/vlv3/5c235903-02cc-4228-85a2-5fcef1e47627/eb81131c-8403-427f-b1dc-6094c31b3a91/IN-en-20211227-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    .top{
+        .wrapper{
+            padding: 30px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            img{
+                height: 40px;
+            }
+
+            .login-button{
+                background-color: #E50914;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                padding: 8px 18px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                z-index: 2;
+                &:hover{
+                    background-color: red;
+                }
+            }
+        }
+    }
+    .container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0%;
+
+        h1{
+            font-size: 50px;
+            width: 600px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        h2{
+            margin: 20px;
+            font-weight: 400;
+        }
+        .input{
+            width: 44rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            height: 60px;
+            border-radius: 5px;
+            overflow: hidden;
+            justify-content: space-between;
+            background-color: white;
+            input{
+                font-size: 24px;
+                padding: 0px 20px;
+                flex: 9;
+                height: 100%;
+                border: none;
+                &:active{
+                    border: 0px;
+                }
+            }
+            button{
+                height: 100%;
+                flex: 4;
+                font-size: 1.4rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #E50914;
+                border: none;
+                color: white;
+                padding: 0px 0px;
+                &:hover{
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

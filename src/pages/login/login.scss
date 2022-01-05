@@ -1,0 +1,81 @@
+.login{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background: radial-gradient(rgba(10, 10, 10, 0.287), rgba(0, 0, 0, 0.856)), url("https://assets.nflxext.com/ffe/siteui/vlv3/5c235903-02cc-4228-85a2-5fcef1e47627/eb81131c-8403-427f-b1dc-6094c31b3a91/IN-en-20211227-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    .top{
+        .wrapper{
+            padding: 30px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            img{
+                height: 40px;
+            }
+        }
+    }
+    .container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0%;
+
+        form{
+            background-color: var(--main-color);
+            width: 340px;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 20px;
+            justify-content: space-around;
+
+            input{
+                border: none;
+                background-color: gray;
+                color: white;
+                height: 50px;
+                border-radius: 5px;
+                padding: 0px 10px;
+                font-size: 1rem;
+                
+                &::placeholder{
+                    color: lightgray;
+                }
+            }
+
+            button{
+                background-color: var(--netflix);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                height: 50px;
+                font-size: 1.1rem;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: red;
+                }
+            }
+
+            span, small{
+                color: lightgray;
+                b{
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+}

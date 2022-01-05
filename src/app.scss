@@ -1,0 +1,16 @@
+:root{
+    --main-color: #0b0b0b;
+    --netflix: #E50914;
+}
+
+*{
+    margin: 0%;
+}
+@font-face {
+    font-family: 'Netflix';
+    src: url('./fonts/NetflixSansRegular.ttf');
+}
+body{
+    font-family: 'Netflix', 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
